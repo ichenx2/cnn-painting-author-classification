@@ -61,8 +61,11 @@ The following figures show the model's training and validation accuracy and loss
 
 ## How to Run
 1. Clone the repository.
-2. Open the provided Colab notebook (`main.ipynb`) or run on your local environment with necessary packages installed (TensorFlow, NumPy, etc.).
-3. Download the dataset and mount your Google Drive if using Colab.
+2. Open the provided Python script (`main.py`) in your local environment or on Google Colab.
+3. Install necessary packages if needed (TensorFlow, NumPy, etc.).
+4. Download the dataset (links provided above) and mount your Google Drive if using Colab.
+5. Run the script to preprocess data, train the model, and evaluate performance.
+
 
 
 
