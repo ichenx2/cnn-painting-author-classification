@@ -1,0 +1,17 @@
+# Ignore Colab notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore dataset files if any
+*.zip
+*.tar.gz
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache files if local testing
+__pycache__/
+*.pyc
+
+# Ignore environment files
+.env
