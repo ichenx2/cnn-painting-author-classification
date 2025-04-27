@@ -24,21 +24,23 @@ This project focuses on building a Convolutional Neural Network (CNN) from scrat
 ## Model Architecture
 The CNN architecture is as follows:
 
+```text
 keras.Sequential([
     # Convolution Blocks
-    Conv2D → BN → MaxPooling
-    Conv2D → BN → MaxPooling
-    Conv2D → BN → MaxPooling
-    Conv2D → BN → MaxPooling
-    Conv2D → BN → MaxPooling
-    Conv2D → BN → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
 
     # Dense Layers
     Flatten
-    Dense → BN → Dropout
-    Dense → BN → Dropout
+    Dense → BatchNormalization → Dropout
+    Dense → BatchNormalization → Dropout
     Dense (Softmax)
 ])
+```
 
 This architecture aims to capture complex features through multiple convolutional blocks, while regularization techniques like BatchNormalization and Dropout help enhance generalization.
 
@@ -59,8 +61,11 @@ The following figures show the model's training and validation accuracy and loss
 
 ## How to Run
 1. Clone the repository.
-2. Open the provided Colab notebook (`main.ipynb`) or run on your local environment with necessary packages installed (TensorFlow, NumPy, etc.).
-3. Download the dataset and mount your Google Drive if using Colab.
+2. Open the provided Python script (`main.py`) in your local environment or on Google Colab.
+3. Install necessary packages if needed (TensorFlow, NumPy, etc.).
+4. Download the dataset (links provided above) and mount your Google Drive if using Colab.
+5. Run the script to preprocess data, train the model, and evaluate performance.
+
 
 
 
