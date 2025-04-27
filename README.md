@@ -24,21 +24,23 @@ This project focuses on building a Convolutional Neural Network (CNN) from scrat
 ## Model Architecture
 The CNN architecture is as follows:
 
+```python
 keras.Sequential([
     # Convolution Blocks
-    Conv2D → BN → MaxPooling
-    Conv2D → BN → MaxPooling
-    Conv2D → BN → MaxPooling
-    Conv2D → BN → MaxPooling
-    Conv2D → BN → MaxPooling
-    Conv2D → BN → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
+    Conv2D → BatchNormalization → MaxPooling
 
     # Dense Layers
     Flatten
-    Dense → BN → Dropout
-    Dense → BN → Dropout
+    Dense → BatchNormalization → Dropout
+    Dense → BatchNormalization → Dropout
     Dense (Softmax)
 ])
+```
 
 This architecture aims to capture complex features through multiple convolutional blocks, while regularization techniques like BatchNormalization and Dropout help enhance generalization.
 
