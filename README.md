@@ -24,7 +24,7 @@ This project focuses on building a Convolutional Neural Network (CNN) from scrat
 ## Model Architecture
 The CNN architecture is as follows:
 
-```python
+```text
 keras.Sequential([
     # Convolution Blocks
     Conv2D → BatchNormalization → MaxPooling
